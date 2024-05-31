@@ -1,11 +1,11 @@
 # Document-similarity
 
+
 #Installing libraries
 #Cohere provides api for converting text into contextual word embeddings. The word embeddings capture the essence of meaning of text when read together.
 
 
-!pip install cohere tqdm annoy
-
+!pip install cohere tqdm annoy #installing cohere library
 
 #Importing datasets
 import cohere
