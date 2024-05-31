@@ -1,13 +1,13 @@
 # Document-similarity
 
 
-#Installing libraries
+**#Installing libraries**
 #Cohere provides api for converting text into contextual word embeddings. The word embeddings capture the essence of meaning of text when read together.
 
 
 !pip install cohere tqdm annoy #installing cohere library
 
-#Importing datasets
+**#Importing packages**
 import cohere
 import numpy as np
 import re
@@ -17,7 +17,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from annoy import AnnoyIndex
 
 
-#API key
+**#API key**
 api_key='xyz...'
 
 
