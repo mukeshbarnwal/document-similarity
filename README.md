@@ -48,11 +48,9 @@ drive.mount('/content/drive')
 
 
 # Path to the PDF file
-
 pdf_path = '/content/drive/MyDrive/Colab Notebooks/JD_Adobe.pdf'
 
 **#Extract text from pdf**
-
 def extract_text_from_pdf(pdf_path):
     # Open the PDF file
     pdf_document = fitz.open(pdf_path)
