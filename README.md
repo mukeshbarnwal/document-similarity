@@ -5,17 +5,19 @@ This code work is about comparing whether one document is similar to another in 
 If the document is similar to any document in the databse,  it will stop from uploading the document enabling storage efficiency, data maintainence, cost reduction and better tracking.
 
 # Overview
-**Getting ready with necesssary packages and libraries**
+**1. Getting ready with necesssary packages and libraries**
 Cohere-> Conversion of text to word embeddings
 Sklearn-> Compute cosine similarity
 Pymupdf-> Read pdf and extract text for analysis
 Fitz-> Read pdf and extract package from Pymupdf
-**Conversion to word embeddings** 
+
+**2. Conversion to word embeddings**
 All stored documents are converted to contextual word embeddings which gives unique meaning to each of the documents.
 The document to be uploaded is also converted in real-time to the contextual word embeddings. 
 
-
-
+**3. Compare the embeddings of uploading documents with the existing ones**
+Convert the text of uploading document into word embeddings and compare this word embedding with the embeddings of stored documents through the use of cosine similarity.
+If it is greater than 99 percent then stop uploading.
 
 # Installing libraries
 #Cohere provides api for converting text into contextual word embeddings. The word embeddings capture the essence of meaning of text when read together.
