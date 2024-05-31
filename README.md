@@ -1,4 +1,4 @@
-# Document-similarity
+# Document-similarity using Large Language Model
 
 # About
 This code work is about comparing whether one document is similar to another in the database. 
