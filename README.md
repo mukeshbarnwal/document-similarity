@@ -25,7 +25,7 @@ api_key='xyz...'
 co=cohere.Client(api_key)
 
 
-#Distance between two documents using cohere
+**#Distance between two documents using cohere**
 
 def get_document_embedding(paragraph):
     # Generate embeddings for the paragraph using Cohere
@@ -33,7 +33,7 @@ def get_document_embedding(paragraph):
     return response.embeddings[0]
 
 
-#Read pdf
+**#Read pdf**
 pip install pymupdf
 
 import fitz
@@ -50,6 +50,8 @@ drive.mount('/content/drive')
 # Path to the PDF file
 
 pdf_path = '/content/drive/MyDrive/Colab Notebooks/JD_Adobe.pdf'
+
+**#Extract text from pdf**
 
 def extract_text_from_pdf(pdf_path):
     # Open the PDF file
