@@ -8,9 +8,15 @@ If the document is similar to any document in the databse,  it will stop from up
 **1. Getting ready with necesssary packages and libraries**
 
 Cohere-> Conversion of text to word embeddings
+
+Drive-> Mount the drive on google colab to access the files in it
+
 Sklearn-> Compute cosine similarity
+
 Pymupdf-> Read pdf and extract text for analysis
+
 Fitz-> Read pdf and extract package from Pymupdf
+
 
 **2. Conversion to word embeddings**
 
@@ -22,11 +28,16 @@ The document to be uploaded is also converted in real-time to the contextual wor
 Convert the text of uploading document into word embeddings and compare this word embedding with the embeddings of stored documents through the use of cosine similarity.
 If it is greater than 99 percent then stop uploading.
 
-# Installing libraries
-#Cohere provides api for converting text into contextual word embeddings. The word embeddings capture the essence of meaning of text when read together.
+
+# Installing libraries and importing packages
+
 !pip install cohere tqdm annoy #installing cohere library
 
+#Cohere provides api for converting text into contextual word embeddings. The word embeddings capture the essence of meaning of text when read together.
+
+
 # Importing packages
+
 import cohere
 import numpy as np
 import re
@@ -37,6 +48,7 @@ from annoy import AnnoyIndex
 
 
 # API key
+
 api_key='xyz...'
 #Create and retrieve Choere API key from os.cohere.ai
 co=cohere.Client(api_key)
@@ -110,16 +122,13 @@ print(embedding1)
 '''Convert string to list of paragraphs'''
 paras=document.split('\n \n')
 
-
 # Get the embeddings for the paragraphs
 embedding1 = get_document_embedding(doc1)
 embedding2 = get_document_embedding(doc1)
 
-
 print(type(embedding1))
 print(embedding1)
 print(embedding2)
-
 
 from scipy.spatial.distance import cosine
 
