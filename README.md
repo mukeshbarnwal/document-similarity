@@ -1,7 +1,8 @@
-# document-similarity
+# Document-similarity
 
 #Installing libraries
-#cohere for embeddings, annoy for approx nearest neighbour search
+#Cohere provides api for converting text into contextual word embeddings. The word embeddings capture the essence of meaning of text when read together.
+
 
 !pip install cohere tqdm annoy
 
@@ -17,7 +18,8 @@ from annoy import AnnoyIndex
 
 
 #API key
-api_key='jQ8YO957htGlY4s62LN1M0EYpaf8UojIVAi9IPQG'
+api_key='xyz...'
+
 
 #Create and retrieve Choere API key from os.cohere.ai
 co=cohere.Client(api_key)
@@ -37,7 +39,7 @@ pip install pymupdf
 import fitz
 
 
-#reading a file in google colab: source-> https://saturncloud.io/blog/how-to-read-a-file-from-drive-in-google-colab/
+#reading a file in Google Colab: source-> https://saturncloud.io/blog/how-to-read-a-file-from-drive-in-google-colab/
 #mounting google drive
 #this will grant permission to Colab to access the drive files
 from google.colab import drive
