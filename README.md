@@ -48,8 +48,8 @@ drive.mount('/content/drive')
 
 
 # Path to the PDF file
-pdf_path = '/content/drive/MyDrive/Colab Notebooks/JD_Adobe.pdf'
 
+pdf_path = '/content/drive/MyDrive/Colab Notebooks/JD_Adobe.pdf'
 
 def extract_text_from_pdf(pdf_path):
     # Open the PDF file
