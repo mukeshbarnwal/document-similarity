@@ -6,16 +6,19 @@ If the document is similar to any document in the databse,  it will stop from up
 
 # Overview
 **1. Getting ready with necesssary packages and libraries**
+
 Cohere-> Conversion of text to word embeddings
 Sklearn-> Compute cosine similarity
 Pymupdf-> Read pdf and extract text for analysis
 Fitz-> Read pdf and extract package from Pymupdf
 
 **2. Conversion to word embeddings**
+
 All stored documents are converted to contextual word embeddings which gives unique meaning to each of the documents.
 The document to be uploaded is also converted in real-time to the contextual word embeddings. 
 
 **3. Compare the embeddings of uploading documents with the existing ones**
+
 Convert the text of uploading document into word embeddings and compare this word embedding with the embeddings of stored documents through the use of cosine similarity.
 If it is greater than 99 percent then stop uploading.
 
