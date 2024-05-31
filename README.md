@@ -1,13 +1,11 @@
 # Document-similarity
 
 
-**#Installing libraries**
+# Installing libraries
 #Cohere provides api for converting text into contextual word embeddings. The word embeddings capture the essence of meaning of text when read together.
-
-
 !pip install cohere tqdm annoy #installing cohere library
 
-**#Importing packages**
+# Importing packages
 import cohere
 import numpy as np
 import re
@@ -17,15 +15,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 from annoy import AnnoyIndex
 
 
-**#API key**
+# API key
 api_key='xyz...'
-
-
 #Create and retrieve Choere API key from os.cohere.ai
 co=cohere.Client(api_key)
 
 
-**#Distance between two documents using cohere**
+# Distance between two documents using cohere
 
 def get_document_embedding(paragraph):
     # Generate embeddings for the paragraph using Cohere
@@ -33,7 +29,7 @@ def get_document_embedding(paragraph):
     return response.embeddings[0]
 
 
-**#Read pdf**
+# Read pdf
 pip install pymupdf
 
 import fitz
@@ -50,7 +46,7 @@ drive.mount('/content/drive')
 # Path to the PDF file
 pdf_path = '/content/drive/MyDrive/Colab Notebooks/JD_Adobe.pdf'
 
-**#Extract text from pdf**
+# Extract text from pdf
 def extract_text_from_pdf(pdf_path):
     # Open the PDF file
     pdf_document = fitz.open(pdf_path)
