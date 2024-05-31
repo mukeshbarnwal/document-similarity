@@ -39,11 +39,17 @@ If it is greater than 99 percent then stop uploading.
 # Importing packages
 
 import cohere
+
 import numpy as np
+
 import re
+
 import pandas as pd
+
 from tqdm import tqdm
+
 from sklearn.metrics.pairwise import cosine_similarity
+
 from annoy import AnnoyIndex
 
 
